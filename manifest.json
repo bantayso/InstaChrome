@@ -1,0 +1,49 @@
+{
+	"name": "InstaChrome",
+	"version": "1.0",
+	"description": "Applies filters to all images as you browse",
+	"content_scripts":
+	[
+		{
+			"matches":
+			[
+				"http://*/*",
+				"https://*/*"
+			],
+			"js":
+			[
+				"jquery.js",
+				"jquery.uri.js",
+				"caman.full.js",
+				"InstaChrome.js"
+			],
+			"run_at": "document_start"
+		}
+	],
+	"browser_action":
+	{
+		"default_icon": "icon-19.png",
+		"default_popup": "popup.html"
+	},
+	"background":
+	{
+		"scripts":
+		[
+			"background.js"
+		]
+	},
+	"icons":
+	{
+		"16": "icon-16.png",
+		"48": "icon-48.png",
+		"128": "icon-128.png"
+	},
+	"permissions":
+	[
+		"activeTab",
+		"http://*/",
+		"https://*/"
+	],
+	"content_security_policy": "default-src 'self'",
+	"manifest_version": 2
+}

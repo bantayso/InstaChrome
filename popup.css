@@ -1,0 +1,65 @@
+body
+{
+	background-image: url(popup-images/background.png);
+	margin: 0px;
+}
+
+table#Presets
+{
+	color: #dfdfdf;	
+	font-family: 'Segoe UI', Arial, sans-serif;
+	font-size: 12px;
+	width: 100%;
+	table-layout: fixed;
+}
+
+td
+{
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 80px;
+	text-align: center;
+	vertical-align: top;
+}
+
+td:hover
+{
+	background-color: #505050;
+}
+
+td#Selected
+{
+	background-color: #808080;
+}
+
+.HeaderFooter
+{
+	height: 40px;
+	width: 100%;
+	display: block;
+	background-color: #FFFFFF;
+	opacity: .1;
+}
+
+.Separator
+{
+	height: 40px;
+	width: 100%;
+	display: block;
+}
+
+#Logo
+{
+	background-image: url(icon-48.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.PresetButtonImage
+{
+	width: 55px;
+	height: 50px;
+	border-radius: 10px
+}
